@@ -26,3 +26,5 @@ A custom CSS theme to give your Mainsail interface a vibrant cyberpunk aesthetic
 Feel free to modify the `custom.css` file to suit your preferences. For more advanced theming options, refer to the [Mainsail documentation](https://docs.mainsail.xyz/).
 
 ---
+
+## ⭐ Consider to star my repo!
