@@ -1,6 +1,6 @@
 # Mainsail Cyberpunk Neon Theme
 
-![Mainsail Cyberpunk Neon](screenshot.png)
+![Mainsail Cyberpunk Neon](social_preview.png)
 
 A custom CSS theme to give your Mainsail interface a vibrant cyberpunk aesthetic.
 
