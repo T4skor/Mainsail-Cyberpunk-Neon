@@ -1,0 +1,129 @@
+:root {
+  --cyberpunk-cyan: #00ffff;
+  --cyberpunk-pink: #ff00c8;
+  --cyberpunk-yellow: #fffb00;
+  --cyberpunk-green: #00ff9c;
+  --cyberpunk-bg: rgba(15, 15, 25, 0.7);
+  --cyberpunk-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  --cyberpunk-blur: blur(20px);
+}
+
+main#content {
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, var(--cyberpunk-pink));
+  background-size: 400% 400%;
+  animation: neonBG 20s ease infinite;
+}
+
+@keyframes neonBG {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.theme--dark.v-navigation-drawer {
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, var(--cyberpunk-pink));
+  background-size: 400% 400%;
+  animation: neonBG 20s ease infinite;
+  backdrop-filter: blur(18px);
+  border-right: 2px solid var(--cyberpunk-pink);
+  box-shadow: 0 0 20px rgba(255, 0, 200, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+
+.sidebar {
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, var(--cyberpunk-pink));
+  background-size: 400% 400%;
+  animation: neonBG 20s ease infinite;
+  backdrop-filter: blur(18px);
+  border-right: 2px solid var(--cyberpunk-pink);
+  box-shadow: 0 0 20px rgba(255, 0, 200, 0.4);
+  transition: all 0.4s ease-in-out;
+}
+
+.theme--dark.v-navigation-drawer .active-nav-item {
+  background: linear-gradient(90deg, var(--cyberpunk-pink), var(--cyberpunk-cyan));
+  color: black !important;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--cyberpunk-cyan);
+  transition: 0.3s ease;
+}
+
+.theme--dark.v-navigation-drawer .v-list-item:hover {
+  background-color: rgba(0, 255, 255, 0.1) !important;
+}
+
+.v-btn {
+  color: var(--cyberpunk-yellow);
+  background-color: rgba(50, 50, 60, 0.7) !important;
+  border: 1px solid var(--cyberpunk-green);
+  border-radius: 10px;
+  text-shadow: 0 0 4px var(--cyberpunk-yellow);
+  transition: all 0.3s ease;
+}
+
+.v-btn:hover {
+  background-color: var(--cyberpunk-green) !important;
+  color: black;
+  box-shadow: 0 0 15px var(--cyberpunk-green), 0 0 40px var(--cyberpunk-green);
+}
+
+.v-input__slot {
+  background-color: rgba(25, 25, 35, 0.85) !important;
+  border: 1px solid var(--cyberpunk-cyan) !important;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.v-input--is-focused .v-input__control {
+  border-color: var(--cyberpunk-pink) !important;
+  box-shadow: 0 0 15px var(--cyberpunk-pink);
+}
+
+.theme--dark.v-sheet,
+.v-card,
+.v-dialog {
+  background-color: var(--cyberpunk-bg) !important;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 12px;
+  backdrop-filter: var(--cyberpunk-blur);
+  box-shadow: var(--cyberpunk-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme--dark.v-sheet:hover,
+.v-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 40px var(--cyberpunk-pink);
+}
+
+.v-data-table tbody tr:hover {
+  background-color: rgba(255, 0, 200, 0.1);
+}
+
+.v-menu__content,
+.v-dialog__content {
+  animation: fadeInGlitch 0.3s ease forwards;
+}
+
+@keyframes fadeInGlitch {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.glow-element {
+  animation: glowPulseCyber 2s ease-in-out infinite;
+}
+
+@keyframes glowPulseCyber {
+  0%, 100% {
+    box-shadow: 0 0 10px var(--cyberpunk-pink);
+  }
+  50% {
+    box-shadow: 0 0 25px var(--cyberpunk-cyan);
+  }
+}
